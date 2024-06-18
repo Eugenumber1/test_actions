@@ -6,8 +6,10 @@ from langevals_langevals.off_topic import (
     OffTopicEvaluator,
     AllowedTopic,
 )
+import os
 from dotenv import load_dotenv
 load_dotenv()
+api_key = os.getenv("OPENAI_API_KEY")
 
 entries = pd.DataFrame(
     {
