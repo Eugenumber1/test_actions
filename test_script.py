@@ -6,6 +6,8 @@ from langevals_langevals.off_topic import (
     OffTopicEvaluator,
     AllowedTopic,
 )
+from dotenv import load_dotenv
+load_dotenv()
 
 entries = pd.DataFrame(
     {
